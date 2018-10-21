@@ -1,1 +1,1 @@
-# poc-automation-wdio
+# poc-automation-wdio-project
