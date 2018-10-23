@@ -1,1 +1,1 @@
-# poc-automation-wdio-project
+# sample-test-automation-wdio-project
