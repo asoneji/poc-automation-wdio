@@ -50,6 +50,7 @@ describe('Sample Automation WDIO Tests', function() {
       browser.setValue(selector+'sendMessageTextField', sendMessage);
       browser.click(selector+'sendMessageButton');
 
+      //getValue not working on android
       if (testutils.isWeb()) {
          assert.equal(browser.getValue(selector+'receivedMessageTextField'), sendMessage, "Message sent is not as expected");
       }
@@ -67,6 +68,7 @@ describe('Sample Automation WDIO Tests', function() {
       browser.setValue(selector+'sendMessageTextField', sendMessage);
       browser.click(selector+'clearMessageButton');
 
+      //getValue not working on android
       if (testutils.isWeb()) {
          assert.equal(browser.getValue(selector+'sendMessageTextField'), "", "Message sent is not as expected");
          assert.equal(browser.getValue(selector+'receivedMessageTextField'), "", "Received sent is not as expected");
