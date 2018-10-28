@@ -1,0 +1,32 @@
+{
+  "name": "sample-test-automation-wdio-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run webTest",
+    "web-test": "./node_modules/.bin/wdio ./test/wdio.web.conf.js",
+    "mobile-test": "./node_modules/.bin/wdio ./test/wdio.mobile.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asoneji/sample-test-automation-wdio-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asoneji/sample-test-automation-wdio-project/issues"
+  },
+  "homepage": "https://github.com/asoneji/sample-test-automation-wdio-project#readme",
+  "devDependencies": {
+    "appium": "^1.9.1",
+    "chai": "^4.2.0",
+    "lodash.merge": "^4.6.1",
+    "wdio-appium-service": "^0.2.3",
+    "wdio-dot-reporter": "0.0.10",
+    "wdio-mocha-framework": "^0.6.3",
+    "wdio-phantomjs-service": "^0.2.2",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "webdriverio": "^4.14.0"
+  }
+}
